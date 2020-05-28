@@ -1,0 +1,22 @@
+<template>
+  <require from="./app.css"></require>
+  <require from="./components/header"></require>
+  <require from="./components/applicant"></require>
+  <header></header>
+  <h1 style="text-align: center; padding: 30px;">${header}</h1>
+  <applicant></applicant>
+  <table class="table" style="width: 80%; margin: 0 auto;">
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Country</th>
+    <th>Address</th>
+  </tr>
+  <tr repeat.for="applicant of applicants">
+    <td>${applicant.name}</td>
+    <td>${applicant.email}</td>
+    <td>${applicant.country}</td>
+    <td>${applicant.address}</td>
+  </tr>
+  </table>
+</template>
