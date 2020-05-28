@@ -3,36 +3,38 @@
     <div class="form-row">
       <div class="form-group col-md-3">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" value.bind="name" placeholder="Enter name">
-      <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" value.bind="applicantModel.name" placeholder="Enter name">
+      <small id="nameHelp" class="form-text text-muted">{Error.name}</small>
     </div>
     <div class="form-group col-md-3">
       <label for="familyName">Family Name</label>
-      <input type="text" class="form-control" id="familyName" value.bind="familyName" aria-describedby="familyNameHelp" placeholder="Enter Family Name">
-      <small id="familyNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="text" class="form-control" id="familyName" value.bind="applicantModel.familyName" aria-describedby="familyNameHelp" placeholder="Enter Family Name">
+      <small id="familyNameHelp" class="form-text text-muted">{Error.familyName}</small>
     </div>
     <div class="form-group col-md-3">
       <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email" value.bind="email" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="email" class="form-control" id="email" value.bind="applicantModel.email" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">{Error.email}</small>
     </div>
     <div class="form-group">
       <label for="address">Address</label>
-      <input type="text" class="form-control" id="address" value.bind="address" aria-describedby="addressHelp" placeholder="Enter address">
-      <small id="addressHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <input type="text" class="form-control" id="address" value.bind="applicantModel.address" aria-describedby="addressHelp" placeholder="Enter address">
+      <small id="addressHelp" class="form-text text-muted">{Error.address}</small>
     </div>
     </div>
   <div class="form-row">
       <div class="form-group col-md-3">
       <label for="age">Age</label>
-      <input type="text" class="form-control" id="age" value.bind="age" placeholder="Age">
+      <input type="text" class="form-control" id="age" value.bind="applicantModel.age" placeholder="Age" aria-describedby="ageHelp">
+      <small id="ageHelp" class="form-text text-muted">{Error.age}</small>
     </div>
     <div class="form-group col-md-3">
       <label for="country">Country Of Origin</label>
-      <input type="text" class="form-control" value.bind="country" id="country" placeholder="Country">
+      <input type="text" class="form-control" value.bind="applicantModel.countryOfOrigin" id="country" placeholder="Country" aria-describedby="countryHelp">
+      <small id="countryHelp" class="form-text text-muted">{Error.country}</small>
     </div>
     <div class="form-group form-check col-md-3" style="padding: 32px;">
-      <input type="checkbox" class="form-check-input" id="hired" value.bind="hired">
+      <input type="checkbox" class="form-check-input" id="hired" value.bind="applicantModel.hired">
       <label class="form-check-label" for="hired">Hired</label>
     </div>
    </div>
