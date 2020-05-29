@@ -13,8 +13,8 @@
     </div>
     <div class="form-group col-md-3">
       <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email" value.bind="applicantModel.email" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">{Error.email}</small>
+      <input type="email" class="form-control" id="eMailAddress" value.bind="applicantModel.eMailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">{Error.eMailAddress}</small>
     </div>
     <div class="form-group">
       <label for="address">Address</label>
@@ -25,7 +25,7 @@
   <div class="form-row">
       <div class="form-group col-md-3">
       <label for="age">Age</label>
-      <input type="text" class="form-control" id="age" value.bind="applicantModel.age" placeholder="Age" aria-describedby="ageHelp">
+      <input type="number" class="form-control" id="age" value.bind=age placeholder="Age" aria-describedby="ageHelp">
       <small id="ageHelp" class="form-text text-muted">{Error.age}</small>
     </div>
     <div class="form-group col-md-3">
@@ -34,7 +34,7 @@
       <small id="countryHelp" class="form-text text-muted">{Error.country}</small>
     </div>
     <div class="form-group form-check col-md-3" style="padding: 32px;">
-      <input type="checkbox" class="form-check-input" id="hired" value.bind="applicantModel.hired">
+      <input type="checkbox" class="form-check-input" id="hired" checked.bind="applicantModel.hired">
       <label class="form-check-label" for="hired">Hired</label>
     </div>
    </div>

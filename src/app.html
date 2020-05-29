@@ -16,11 +16,11 @@
   </tr>
   <tr repeat.for="applicant of applicants">
     <td>${applicant.name}</td>
-    <td>${applicant.email}</td>
-    <td>${applicant.country}</td>
+    <td>${applicant.eMailAddress}</td>
+    <td>${applicant.countryOfOrigin}</td>
     <td>${applicant.address}</td>
-    <td><input type="button" class="btn btn-primary" onclick="edit(applicant)" value="Edit"/></td>
-    <td><input type="button" class="btn btn-primary" onclick="remove(applicant.ID)" value="Remove"/></td>
+    <td><input type="button" class="btn btn-primary" click.trigger="edit(applicant)" value="Edit"/></td>
+    <td><input type="button" class="btn btn-primary" click.trigger="deleteApplicant(applicant)" value="Remove"/></td>
   </tr>
   </table>
 </template>

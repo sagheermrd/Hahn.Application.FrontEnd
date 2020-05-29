@@ -6,6 +6,6 @@ export interface IApplicant{
     address:string
     age:number
     countryOfOrigin:string
-    emailAddress:string
+    eMailAddress:string
     hired:boolean
   }
